@@ -1,0 +1,20 @@
+SELECT * FROM [Customers]
+WHERE PostalCode = "1010"
+
+SELECT * FROM [Suppliers]
+WHERE SupplierID = 11
+
+SELECT * FROM [Orders]
+ORDER BY OrderDate DESC
+LIMIT 10
+
+SELECT * FROM [Customers]
+WHERE City = "London" OR City = "Madrid"
+OR Country = "Brazil"
+
+INSERT INTO Customers (CustomerName, ContactName, Address, City, PostalCode, Country)
+VALUES ("The Shire", "Bilbo Baggins", "1 Hobbit-Hole", "Bag End", "111", "Middle Earth")
+
+UPDATE Customers
+SET PostalCode = 11122
+WHERE CustomerID = 92
